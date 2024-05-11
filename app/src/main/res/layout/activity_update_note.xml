@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".AddNotesActivity">
+    tools:context=".UpdateNoteActivity">
 
     <TextView
         android:id="@+id/noteheading"
@@ -14,12 +14,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:text="add note"
+        android:text="Edit note"
         android:textColor="@color/blue"
         android:textSize="24sp"/>
 
     <ImageView
-        android:id="@+id/savebutton"
+        android:id="@+id/updatesavebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_check_circle_24"
@@ -28,7 +28,7 @@
         android:layout_marginEnd="6dp"/>
 
     <EditText
-        android:id="@+id/titleedittext"
+        android:id="@+id/updatetitleedittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter the title"
@@ -40,16 +40,15 @@
         android:maxLines="1"/>
 
     <EditText
-        android:id="@+id/edittext"
+        android:id="@+id/updateedittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter the note"
         android:gravity="top"
         android:padding="12dp"
         android:textSize="18sp"
-        android:layout_below="@id/titleedittext"
+        android:layout_below="@id/updatetitleedittext"
         android:background="@drawable/blue_border"
-        android:layout_marginTop="16dp"
-        android:maxLines="4"/>
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>
